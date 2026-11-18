@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟Renova Alameda: Eco-Edition🌟</title>
+    <!-- Importação correta das fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>✨RenovaAlameda✨</h1>
+            <p class="subtitle">Mundo Limpo, Look Impecável</p>
+        </header>
+
+        <div class="character-box">
+            <span class="avatar">💅</span>
+            <div class="char-info">
+                <strong>Status da Tiffany:</strong> <span id="status">Pronta pra missão</span>
+            </div>
+        </div>
+
+        <!-- Indicador de progresso das 10 etapas -->
+        <div id="step-badge" class="step-badge">Etapa 1 de 10</div>
+
+        <main class="story-box">
+            <div id="story-content" style="width: 100%;">
+                <p id="story-text">Carregando a história...</p>
+                <!-- Onde os créditos e links vão aparecer dinamicamente -->
+                <div id="credits-list" class="credits-list" style="display: none;"></div>
+            </div>
+        </main>
+
+        <div id="choices-container" class="choices-box">
+            <!-- Os botões de escolha vão aparecer aqui dinamicamente -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
