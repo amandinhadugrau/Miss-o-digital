@@ -15,7 +15,8 @@ const storyData = {
         status: "Ativista Solar ☀️",
         choices: [
             { text: "📊 Mostrar os cálculos de economia na conta de luz a longo prazo e sugerir um mutirão.", target: "solar_3" },
-            { text: "🔥 Desistir dos painéis e sugerir queimar o lixo do bairro para gerar energia térmica.", target: "game_over_lixo" }
+            { text: "🔥 Desistir dos painéis e sugerir queimar o lixo do bairro para gerar energia térmica.", target: "game_over_lixo" },
+            { text: "🛢️ Propor instalar um gerador a diesel no telhado para economizar.", target: "game_over_diesel" }
         ]
     },
     solar_3: {
@@ -24,7 +25,8 @@ const storyData = {
         status: "Engenheira Fashion 📐",
         choices: [
             { text: "💿 Virados para o Norte geográfico, longe da sombra das árvores.", target: "solar_4" },
-            { text: "🌳 Virados para o Sul, bem debaixo das copas das árvores grandes para não esquentar.", target: "game_over_sombra" }
+            { text: "🌳 Virados para o Sul, bem debaixo das copas das árvores grandes para não esquentar.", target: "game_over_sombra" },
+            { text: "🧱 Deitados retos no chão do pátio para economizar na instalação.", target: "game_over_sombra" }
         ]
     },
     solar_4: {
@@ -33,7 +35,8 @@ const storyData = {
         status: "Expert em Fotovoltaica ⚡",
         choices: [
             { text: "🔌 Instalar um Inversor Solar para converter a energia com segurança.", target: "solar_5" },
-            { text: "✂️ Cortar os fios e ligar direto na tomada sem equipamento nenhum.", target: "game_over_curto" }
+            { text: "✂️ Cortar os fios e ligar direto na tomada sem equipamento nenhum.", target: "game_over_curto" },
+            { text: "🔋 Ligar os painéis direto em pilhas comuns palito (AAA).", target: "game_over_curto" }
         ]
     },
     solar_5: {
@@ -42,7 +45,8 @@ const storyData = {
         status: "Influencer Ecológica 💻",
         choices: [
             { text: "🔋 Conectar o sistema à rede elétrica (on-grid) com créditos de energia e baterias de apoio.", target: "solar_6" },
-            { text: "🕯️ Distribuir velas de parafina e lampiões a querosene para todo mundo.", target: "game_over_fumaca" }
+            { text: "🕯️ Distribuir velas de parafina e lampiões a querosene para todo mundo.", target: "game_over_fumaca" },
+            { text: "🛢️ Ligar um gerador a gasolina dentro da sala de cada apartamento.", target: "game_over_diesel" }
         ]
     },
     solar_6: {
@@ -51,7 +55,8 @@ const storyData = {
         status: "Guardiã da Reciclagem ♻️",
         choices: [
             { text: "♻️ Separar todos os resíduos e encaminhar para a cooperativa de reciclagem do bairro.", target: "solar_7" },
-            { text: "🚮 Jogar tudo no terreno baldio ao lado do córrego durante a madrugada.", target: "game_over_lixo" }
+            { text: "🚮 Jogar tudo no terreno baldio ao lado do córrego durante a madrugada.", target: "game_over_lixo" },
+            { text: "🔥 Fazer uma grande fogueira com as embalagens na praça central.", target: "game_over_lixo" }
         ]
     },
     solar_7: {
@@ -60,7 +65,8 @@ const storyData = {
         status: "Líder Responsável ⛑️",
         choices: [
             { text: "🌟 Contratar técnicos certificados com EPIs e deixar os moradores apoiando na logística em terra.", target: "solar_8" },
-            { text: "📱 Deixar todo mundo subir no telhado molhado sem capacete nem cinto.", target: "game_over_acidente" }
+            { text: "📱 Deixar todo mundo subir no telhado molhado sem capacete nem cinto.", target: "game_over_acidente" },
+            { text: "🪜 Usar escadas velhas de madeira amarradas com barbante para economizar.", target: "game_over_acidente" }
         ]
     },
     solar_8: {
@@ -69,7 +75,8 @@ const storyData = {
         status: "Estrategista Comunitária 💡",
         choices: [
             { text: "🎤 Organizar um bazar beneficente retrô e um festival de talentos para arrecadar fundos.", target: "solar_9" },
-            { text: "🦋 Cortar e vender a madeira dos ipês centenários que dão nome ao bairro.", target: "game_over_desmate" }
+            { text: "🦋 Cortar e vender a madeira dos ipês centenários que dão nome ao bairro.", target: "game_over_desmate" },
+            { text: "💸 Vender os painéis solares recém-instalados para pagar a iluminação.", target: "game_over_egoismo" }
         ]
     },
     solar_9: {
@@ -78,7 +85,8 @@ const storyData = {
         status: "Consultora Sustentável 💧",
         choices: [
             { text: "🌧️ Fazer limpeza periódica usando água da chuva reaproveitada e pano macio.", target: "solar_10" },
-            { text: "💿 Lavar os painéis todos os dias com produtos químicos tóxicos e mangueira aberta.", target: "game_over_quimico" }
+            { text: "💿 Lavar os painéis todos os dias com produtos químicos tóxicos e mangueira aberta.", target: "game_over_quimico" },
+            { text: "🛢️ Usar óleo de motor usado para tirar a sujeira dos vidros.", target: "game_over_quimico" }
         ]
     },
     solar_10: {
@@ -87,7 +95,8 @@ const storyData = {
         status: "Finalista Miss Ecologia 👑",
         choices: [
             { text: "🏫 Criar oficinas gratuitas de educação ambiental e energia limpa para escolas da região.", target: "final_solar" },
-            { text: "🔒 Cobrar ingresso caro para qualquer pessoa de fora olhar os painéis.", target: "game_over_egoismo" }
+            { text: "🔒 Cobrar ingresso caro para qualquer pessoa de fora olhar os painéis.", target: "game_over_egoismo" },
+            { text: "🗑️ Transformar a área dos painéis num depósito comunitário de entulho.", target: "game_over_lixo" }
         ]
     },
     eolica_2: {
@@ -96,7 +105,8 @@ const storyData = {
         status: "Eco-Eólica 💨",
         choices: [
             { text: "🍃 Explicar que as turbinas modernas têm design aerodinâmico silencioso e usam vento infinito.", target: "eolica_3" },
-            { text: "🌊 Mudar o plano e represar o riacho local, inundando as casas para fazer uma hidrelétrica.", target: "game_over_represa" }
+            { text: "🌊 Mudar o plano e represar o riacho local, inundando as casas para fazer uma hidrelétrica.", target: "game_over_represa" },
+            { text: "🛢️ Abandonar o vento e ligar geradores a diesel no topo do morro.", target: "game_over_diesel" }
         ]
     },
     eolica_3: {
@@ -105,7 +115,8 @@ const storyData = {
         status: "Pesquisadora dos Ventos 🌬️",
         choices: [
             { text: "📏 Instalar um anemômetro para medir a velocidade e a direção dos ventos por um período.", target: "eolica_4" },
-            { text: "🎲 Comprar as maiores turbinas no chute sem saber se o vento é forte o bastante.", target: "game_over_chute" }
+            { text: "🎲 Comprar as maiores turbinas no chute sem saber se o vento é forte o bastante.", target: "game_over_chute" },
+            { text: "🎈 Molhar o dedo e levantar para cima para decidir a compra das turbinas.", target: "game_over_chute" }
         ]
     },
     eolica_4: {
@@ -114,7 +125,8 @@ const storyData = {
         status: "Protetora da Fauna 💿",
         choices: [
             { text: "🦅 Posicionar as torres fora do corredor de voo e pintar uma pá de preto para aumentar a visibilidade.", target: "eolica_5" },
-            { text: "📢 Instalar sirenes ensurdecedoras para espantar todos os animais da floresta.", target: "game_over_fauna" }
+            { text: "📢 Instalar sirenes ensurdecedoras para espantar todos os animais da floresta.", target: "game_over_fauna" },
+            { text: "🪵 Derrubar todas as árvores ao redor para os pássaros não fazerem ninhos ali.", target: "game_over_desmate" }
         ]
     },
     eolica_5: {
@@ -123,7 +135,8 @@ const storyData = {
         status: "Professora Pop 🎓",
         choices: [
             { text: "⚙️ A energia cinética do vento gira as pás, acionando um gerador que transforma movimento em eletricidade.", target: "eolica_6" },
-            { text: "🔥 O atrito das hélices esquenta o ar e queima carvão mineral dentro da torre.", target: "game_over_carvao" }
+            { text: "🔥 O atrito das hélices esquenta o ar e queima carvão mineral dentro da torre.", target: "game_over_carvao" },
+            { text: "🧪 As hélices fabricam eletricidade soltando produtos químicos no ar.", target: "game_over_quimico" }
         ]
     },
     eolica_6: {
@@ -132,7 +145,8 @@ const storyData = {
         status: "Engenheira de Redes 🔌",
         choices: [
             { text: "🌱 Utilizar rede subterrânea bem isolada nas trilhas já existentes, preservando a vegetação nativa.", target: "eolica_7" },
-            { text: "🚜 Abrir uma avenida de asfalto derrubando toda a mata do morro para passar postes.", target: "game_over_desmate" }
+            { text: "🚜 Abrir uma avenida de asfalto derrubando toda a mata do morro para passar postes.", target: "game_over_desmate" },
+            { text: "✂️ Deixar os fios de alta tensão soltos no chão no meio da trilha.", target: "game_over_curto" }
         ]
     },
     eolica_7: {
@@ -141,7 +155,8 @@ const storyData = {
         status: "Mestre do Planejamento 🔋",
         choices: [
             { text: "⚡ Integrar um banco de baterias recarregáveis e conexão híbrida com a rede pública.", target: "eolica_8" },
-            { text: "🛢️ Ligar motores a gasolina toda vez que o vento diminuir.", target: "game_over_diesel" }
+            { text: "🛢️ Ligar motores a gasolina toda vez que o vento diminuir.", target: "game_over_diesel" },
+            { text: "🕯️ Apagar todas as luzes do bairro e voltar a usar velas.", target: "game_over_fumaca" }
         ]
     },
     eolica_8: {
@@ -150,7 +165,8 @@ const storyData = {
         status: "Gestora Solidária 🤝",
         choices: [
             { text: "🏘️ Criar uma cooperativa comunitária onde os créditos de energia reduzem a conta de todos.", target: "eolica_9" },
-            { text: "💸 Vender toda a energia para uma fábrica poluente e deixar o bairro sem luz.", target: "game_over_egoismo" }
+            { text: "💸 Vender toda a energia para uma fábrica poluente e deixar o bairro sem luz.", target: "game_over_egoismo" },
+            { text: "🔒 Cobrar uma taxa abusiva apenas das famílias mais necessitadas.", target: "game_over_egoismo" }
         ]
     },
     eolica_9: {
@@ -159,7 +175,8 @@ const storyData = {
         status: "Especialista em Segurança 🛡️",
         choices: [
             { text: "🛑 Acionar o sistema automático de freio e ajuste de ângulo das pás (pitch control).", target: "eolica_10" },
-            { text: "🎀 Amarrar cordas de varal nas hélices para tentar segurar na mão.", target: "game_over_acidente" }
+            { text: "🎀 Amarrar cordas de varal nas hélices para tentar segurar na mão.", target: "game_over_acidente" },
+            { text: "🔨 Deixar as hélices girarem sem freio até estourarem o motor.", target: "game_over_acidente" }
         ]
     },
     eolica_10: {
@@ -168,7 +185,8 @@ const storyData = {
         status: "Finalista Miss Ecologia 👑",
         choices: [
             { text: "🌻 Criar um parque ecológico educativo com trilha sustentável e mirante aberto à comunidade.", target: "final_eolica" },
-            { text: "🗑️ Transformar o topo do morro em depósito de entulho de construção.", target: "game_over_lixo" }
+            { text: "🗑️ Transformar o topo do morro em depósito de entulho de construção.", target: "game_over_lixo" },
+            { text: "🔒 Proibir a entrada de moradores e fechar o morro com um muro alto.", target: "game_over_egoismo" }
         ]
     },
     final_solar: {
@@ -323,16 +341,18 @@ function updateGame(stateKey) {
     }
 
     if (choicesContainer) {
-        // Cria uma cópia do array de escolhas para poder embaralhar sem alterar o original
+        // Cria uma cópia das escolhas
         let choicesEmbaralhadas = [...state.choices];
         
-        // Algoritmo Fisher-Yates para embaralhar aleatoriamente
-        for (let i = choicesEmbaralhadas.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [choicesEmbaralhadas[i], choicesEmbaralhadas[j]] = [choicesEmbaralhadas[j], choicesEmbaralhadas[i]];
+        // Aplica o embaralhamento (Fisher-Yates) se houver mais de 1 opção
+        if (choicesEmbaralhadas.length > 1) {
+            for (let i = choicesEmbaralhadas.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [choicesEmbaralhadas[i], choicesEmbaralhadas[j]] = [choicesEmbaralhadas[j], choicesEmbaralhadas[i]];
+            }
         }
 
-        // Renderiza os botões embaralhados
+        // Renderiza os botões
         choicesEmbaralhadas.forEach(choice => {
             const button = document.createElement("button");
             button.innerText = choice.text;
